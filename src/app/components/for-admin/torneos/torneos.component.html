@@ -1,0 +1,212 @@
+<div class="col-xl-12">
+    <!-- <button type="button" class="btn btn-primary ng-tns-c1826512556-63">
+        <i class="feather icon-plus"></i>
+        Nuevo Torneo
+    </button> -->
+    <div class="input-group mb-4">
+        <div class="input-group-prepend">
+            <label for="games" class="input-group-text">Buscar Torneo</label>
+        </div>
+        <select name="games" id="games" class="form-select">
+            <option selected >Seleccione un Torneo</option>
+            <option value="1">Mario Kart</option>
+            <option value="2">Fifa 2023</option>
+            <option value="3">Mortal Kombat</option>
+        </select>
+    </div>
+    <app-card
+    cardTitle="Inscritos"
+    [options]="true"
+    blockClass="table-border-style"
+    >
+    <div class="table-responsive">        
+        <table class="table table-xl text-center">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Usuario</th>
+                    <th>Victorias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>2</td>
+                </tr>
+        </table>
+    </div>
+    
+    </app-card>
+    
+    <app-card
+    cardTitle="Fase de Grupos"
+    [options]="true"
+    blockClass=""
+    >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        Grupo A                  
+                    </div>                    
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Equipo 1</li>
+                            <li class="list-group-item">Equipo 2</li>
+                            <li class="list-group-item">Equipo 3</li>
+                            <li class="list-group-item">Equipo 4</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-right"> <!-- Agrega esta línea para colocar el botón a la derecha -->
+                        <button class="btn btn-primary text-white">Editar</button> <!-- Botón "Editar" -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        Grupo B
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Equipo 5</li>
+                            <li class="list-group-item">Equipo 6</li>
+                            <li class="list-group-item">Equipo 7</li>
+                            <li class="list-group-item">Equipo 8</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-right"> <!-- Agrega esta línea para colocar el botón a la derecha -->
+                        <button class="btn btn-primary text-white">Editar</button> <!-- Botón "Editar" -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        Grupo C
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Equipo 9</li>
+                            <li class="list-group-item">Equipo 10</li>
+                            <li class="list-group-item">Equipo 11</li>
+                            <li class="list-group-item">Equipo 12</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-right"> <!-- Agrega esta línea para colocar el botón a la derecha -->
+                        <button class="btn btn-primary text-white">Editar</button> <!-- Botón "Editar" -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        Grupo D
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Equipo 13</li>
+                            <li class="list-group-item">Equipo 14</li>
+                            <li class="list-group-item">Equipo 15</li>
+                            <li class="list-group-item">Equipo 16</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-right"> <!-- Agrega esta línea para colocar el botón a la derecha -->
+                        <button class="btn btn-primary text-white">Editar</button> <!-- Botón "Editar" -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repite la estructura para otros grupos si es necesario -->
+    </div>    
+    </app-card>
+
+    <app-card
+    cardTitle="Braquet"
+    [options]="true"
+    blockClass=""
+    >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h4 class="text-center">Cuartos #1</h4>
+                <!-- Primeros dos equipos -->
+                <div class="matchup">
+                    <div class="team">Equipo 1</div>
+                    <div class="team">Equipo 2</div>
+                </div>
+                <!-- Segundos dos equipos -->
+                <div class="matchup">
+                    <div class="team">Equipo 3</div>
+                    <div class="team">Equipo 4</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h4 class="text-center">Semifinal #1</h4>
+                <!-- Ganador del primer cuarto de final vs Ganador del segundo cuarto de final -->
+                <div class="matchup">
+                    <div class="team">Ganador 1</div>
+                    <div class="team">Ganador 2</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="text-center text-danger">Final</h4>
+                <!-- Ganador de la semifinal 1 vs Ganador de la semifinal 2 -->
+                <div class="matchup">
+                    <div class="team">G. Semifinal 1 vs. G. Semifinal 2</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h4 class="text-center">Semifinal #2</h4>
+                <!-- Ganador del primer cuarto de final vs Ganador del segundo cuarto de final -->
+                <div class="matchup">
+                    <div class="team">Ganador 1</div>
+                    <div class="team">Ganador 2</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h4 class="text-center">Cuartos #2</h4>
+                <!-- Primeros dos equipos -->
+                <div class="matchup">
+                    <div class="team">Equipo 5</div>
+                    <div class="team">Equipo 6</div>
+                </div>
+                <!-- Segundos dos equipos -->
+                <div class="matchup">
+                    <div class="team">Equipo 7</div>
+                    <div class="team">Equipo 8</div>
+                </div>
+            </div>            
+        </div>
+    </div>            
+    </app-card>
+</div>
+
+
